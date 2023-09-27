@@ -59,16 +59,36 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-EN-sS9">
+                                <rect key="frame" x="16.000000000000004" y="334" width="37.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="◀"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="beL-YD-DWa" eventType="touchUpInside" id="XQR-mF-5KC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZg-4x-rRM">
+                                <rect key="frame" x="339.66666666666669" y="334" width="37.333333333333314" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶"/>
+                                <connections>
+                                    <action selector="didTapForwardButton:" destination="beL-YD-DWa" eventType="touchUpInside" id="IZI-Pp-WKf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gCD-0m-WlJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="y0C-a7-M3h" firstAttribute="top" secondItem="gCD-0m-WlJ" secondAttribute="top" constant="20" id="IWY-Te-q8P"/>
-                            <constraint firstItem="qGa-dw-ENB" firstAttribute="leading" secondItem="y0C-a7-M3h" secondAttribute="trailing" constant="2" id="MYd-0S-F24"/>
-                            <constraint firstItem="qGa-dw-ENB" firstAttribute="top" secondItem="gCD-0m-WlJ" secondAttribute="top" constant="20" id="UPT-2o-73V"/>
-                            <constraint firstItem="5eT-7N-Nvg" firstAttribute="top" secondItem="qGa-dw-ENB" secondAttribute="bottom" constant="75" id="Veg-O7-51c"/>
-                            <constraint firstItem="qGa-dw-ENB" firstAttribute="centerX" secondItem="md8-Gz-K94" secondAttribute="centerX" id="dXc-WP-bGi"/>
-                            <constraint firstItem="5eT-7N-Nvg" firstAttribute="centerX" secondItem="md8-Gz-K94" secondAttribute="centerX" id="rS0-7D-0Qn"/>
+                            <constraint firstItem="gCD-0m-WlJ" firstAttribute="trailing" secondItem="UZg-4x-rRM" secondAttribute="trailing" constant="16" id="CDT-Pl-Txd"/>
+                            <constraint firstItem="qGa-dw-ENB" firstAttribute="centerX" secondItem="md8-Gz-K94" secondAttribute="centerX" id="Chh-t2-K9V"/>
+                            <constraint firstItem="qGa-dw-ENB" firstAttribute="top" secondItem="gCD-0m-WlJ" secondAttribute="top" constant="20" id="IQH-O9-Yyx"/>
+                            <constraint firstItem="5eT-7N-Nvg" firstAttribute="top" secondItem="qGa-dw-ENB" secondAttribute="bottom" constant="75" id="LSY-kU-faf"/>
+                            <constraint firstItem="5eT-7N-Nvg" firstAttribute="centerX" secondItem="md8-Gz-K94" secondAttribute="centerX" id="M23-EW-gvN"/>
+                            <constraint firstItem="rKy-EN-sS9" firstAttribute="leading" secondItem="gCD-0m-WlJ" secondAttribute="leading" constant="16" id="QWs-6o-U9q"/>
+                            <constraint firstItem="UZg-4x-rRM" firstAttribute="centerY" secondItem="md8-Gz-K94" secondAttribute="centerY" constant="-75" id="X2k-1i-TL7"/>
+                            <constraint firstItem="qGa-dw-ENB" firstAttribute="leading" secondItem="y0C-a7-M3h" secondAttribute="trailing" constant="2" id="gDg-5P-Krn"/>
+                            <constraint firstItem="y0C-a7-M3h" firstAttribute="top" secondItem="gCD-0m-WlJ" secondAttribute="top" constant="20" id="pp0-BB-I2J"/>
+                            <constraint firstItem="rKy-EN-sS9" firstAttribute="centerY" secondItem="md8-Gz-K94" secondAttribute="centerY" constant="-75" id="scC-m2-k7b"/>
                         </constraints>
                     </view>
                     <connections>
